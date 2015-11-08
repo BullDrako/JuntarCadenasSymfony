@@ -1,0 +1,10 @@
+{%  extends '::base.html.twig' %}
+
+
+{% block body %}
+    <form method="post" action="{{ path('app_default_dojuntar') }}" > <!-- path('app_default_sum') -->
+        <input type="text" name="cadena1"/>
+        <input type="text" name="cadena2"/>
+        <input type="submit" value="juntar"/>
+    </form>
+{% endblock %}
